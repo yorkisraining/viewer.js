@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="viewer.min.css" />
+		<style type="text/css">
+			.wrap {
+				width: 400px;
+				border: 1px solid #ccc;
+				padding: 15px;
+				float: left;
+				margin: 20px;
+			}
+			
+			.wrap img {
+				width: 100%;
+			}
+			
+			#open {
+				width: 400px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			
+			#open img {
+				width: 100%;
+			}
+		</style>
+		
+
+	</head>
+
+	<body>
+		<div id="viewer">
+		<div class="wrap">
+			<img src="849182692637800443.jpg" />
+		</div>
+		<div class="wrap">
+			<img src="http://www.people.com.cn/mediafile/pic/20161110/78/6262817885730757102.jpg" />
+		</div>
+		</div>
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script type="text/javascript" src="exif.js" ></script>
+		<script type="text/javascript" src="viewer.min.js" ></script>
+		<script type="text/javascript">
+			
+			$('img').viewer();
+			
+		</script>
+	</body>
+
+</html>
